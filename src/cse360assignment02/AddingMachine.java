@@ -7,6 +7,7 @@ public class AddingMachine {
     private int total;
     StringBuffer history;
 
+
     public AddingMachine () {
         total = 0;  // not needed - included for clarity
         history = new StringBuffer("0");
@@ -18,14 +19,14 @@ public class AddingMachine {
 
     public void add (int value) {
 
-        this.total += value;
+        total = total + value;
         history.append(" + " + value);
 
     }
 
 
     public void subtract (int value) {
-        total -= value;
+        total = total - value;
         history.append(" - " + value);
     }
 
